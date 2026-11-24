@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Keyora Journal | Security Magazine & Locksmith Insights</title>
+  <meta name="description" content="The Keyora Journal: Editorial security magazine with expert advice on residential door hardening, smart locks vs mechanical deadbolts, key maintenance, and emergency guides.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg"><path d='M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-notice-bar">
+    <div class="container top-notice-inner">
+      <div class="top-notice-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <span>Master Locksmith Guild Accredited • Licensed &amp; Insured #LK-89412</span>
+      </div>
+      <div class="top-notice-item" style="font-weight: 600;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+        <span>24/7 Rapid Emergency Response: +1 (555) 123-4567</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Header / Navbar -->
+  <header class="site-header">
+    <div class="container navbar-container">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-identity" aria-label="Keyora Homepage">
+        <div class="brand-icon-wrapper" style="width: 44px; height: 44px; min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 22px; height: 22px; max-width: 22px; max-height: 22px; display: block;">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <circle cx="12" cy="10" r="2" fill="currentColor"/>
+            <path d="M12 12v3"/>
+          </svg>
+        </div>
+        <div class="brand-text-col">
+          <span class="brand-title">Keyora</span>
+          <span class="brand-tagline">Locksmith &amp; Security</span>
+        </div>
+      </a>
+
+      <!-- Center Desktop Navigation -->
+      <nav class="nav-menu-desktop" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home-2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="blog.html" class="nav-link active">Blog</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Right Action Controls -->
+      <div class="header-actions">
+        <button type="button" class="icon-btn-toggle dir-toggle-btn" aria-label="Toggle LTR/RTL Direction" title="Toggle Layout Direction">
+          <span style="font-weight: 700; font-size: 0.75rem;">RTL</span>
+        </button>
+
+        <button type="button" class="icon-btn-toggle theme-toggle-btn" aria-label="Toggle Light/Dark Theme" title="Toggle Theme">
+          <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+
+        <!-- Refined Header CTA Button -->
+        <button type="button" class="header-cta-btn" data-open-modal="bookingModal" title="Book a Security Consultation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span>Book Consultation</span>
+        </button>
+
+        <button type="button" class="hamburger-btn" aria-label="Open Navigation Drawer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <div class="brand-text-col">
+        <span class="brand-title">Keyora</span>
+        <span class="brand-tagline">Locksmith &amp; Security</span>
+      </div>
+      <button type="button" class="mobile-close-btn" aria-label="Close Navigation Drawer">&times;</button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="home-2.html" class="mobile-nav-link">Home 2</a>
+      <a href="about.html" class="mobile-nav-link">About Us</a>
+      <a href="services.html" class="mobile-nav-link">Services</a>
+      <a href="blog.html" class="mobile-nav-link active">Blog</a>
+      <a href="pricing.html" class="mobile-nav-link">Pricing</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </div>
+  </aside>
+
+  <main id="main-content">
+
+    <!-- ======================================================================
+         SECTION 1: HERO – THE KEYORA JOURNAL (Replicates Home Hero Design)
+         ====================================================================== -->
+    <section class="journal-hero-wrapper" aria-label="The Keyora Journal Hero Section">
+      <!-- High-res hero art of the Elegant Locksmith Workspace with House Keychain -->
+      <div class="journal-hero-bg" role="img" aria-label="Keyora master locksmith workspace with brass house keychain, calipers, and precision lock hardware"></div>
+      
+      <!-- Smooth dark walnut gradient overlay on text side for crystal readability -->
+      <div class="journal-hero-overlay"></div>
+
+      <div class="container journal-hero-content-container">
+        <div class="journal-hero-grid">
+          
+          <!-- Text & Content Left Side -->
+          <div class="journal-hero-text-block">
+            
+            <!-- Journal Badge Pill -->
+            <div class="hero-emergency-badge" style="background-color: rgba(57, 37, 29, 0.7); border-color: rgba(216, 195, 165, 0.45); color: var(--color-beige);">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 15px; height: 15px; stroke: var(--color-bronze);"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
+              <span>The Keyora Journal &bull; Security Field Edition</span>
+            </div>
+
+            <!-- Large Hero Headline -->
+            <h1 class="hero-headline">
+              Insights That Keep You<br>
+              <span class="highlight-word">One Step Ahead.</span>
+            </h1>
+
+            <!-- Subtitle Description -->
+            <p class="hero-subtext">
+              Practical guidance, mechanical craft wisdom, and architectural security insights curated directly by Keyora’s guild of certified master locksmiths.
+            </p>
+
+            <!-- Search Bar Form -->
+            <form class="journal-search-form" id="journalSearchForm" onsubmit="return false;">
+              <svg class="journal-search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+              <input type="text" id="journalSearchInput" class="journal-search-input" placeholder="Search security guides, lock maintenance, tips..." aria-label="Search articles">
+              <button type="button" id="journalSearchClear" style="display: none; background: none; border: none; color: var(--text-muted); cursor: pointer; padding: 0 0.5rem; font-size: 1.1rem;">&times;</button>
+              <button type="submit" class="journal-search-btn">Search</button>
+            </form>
+
+            <!-- Trust Indicators Row -->
+            <div class="journal-hero-trust-row">
+              <div class="journal-hero-trust-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                <span>60+ Field Guides</span>
+              </div>
+              <div class="journal-hero-trust-separator"></div>
+              <div class="journal-hero-trust-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span>Updated Weekly</span>
+              </div>
+              <div class="journal-hero-trust-separator"></div>
+              <div class="journal-hero-trust-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <span>Master Technician Authored</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Empty right side allows the elegant locksmith workspace and house keychain to shine through -->
+          <div class="hero-visual-focal" aria-hidden="true"></div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 2: FEATURED ARTICLE – EDITOR'S PICK
+         ====================================================================== -->
+    <section class="section" style="padding-top: 4.5rem; padding-bottom: 4.5rem;">
+      <div class="container">
+        
+        <div class="featured-article-card">
+          <!-- Left Visual -->
+          <div class="featured-article-media">
+            <img src="assets/images/blog-home-security.jpg" alt="10 Practical Ways to Make Your Home More Secure">
+            <span class="featured-pill-badge">Editor's Pick • Home Security</span>
+          </div>
+
+          <!-- Right Content -->
+          <div class="featured-article-body">
+            <div class="featured-meta-row">
+              <span>October 14, 2026</span>
+              <span>•</span>
+              <span>8 Min Read</span>
+              <span>•</span>
+              <span>Master Guild Guide</span>
+            </div>
+
+            <h2 class="featured-article-title">
+              <a href="blog/home-security-tips.html">10 Practical Ways to Make Your Home More Secure</a>
+            </h2>
+
+            <p class="featured-article-excerpt">
+              From deadbolt throw depth and 3-inch strike plate reinforcement to non-destructive entry deterrents, discover ten field-tested steps every homeowner can implement today.
+            </p>
+
+            <div class="featured-author-row">
+              <div class="featured-author-info">
+                <img src="assets/images/team-senior-locksmith.jpg" alt="Marcus Vance" class="featured-author-avatar">
+                <div>
+                  <div class="featured-author-name">Marcus Vance</div>
+                  <div class="featured-author-role">Master Guild Technician (18+ Yrs)</div>
+                </div>
+              </div>
+
+              <a href="blog/home-security-tips.html" class="btn-hero-primary" style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; padding: 0.75rem 1.5rem; border-radius: 4px; font-weight: 600; background: linear-gradient(135deg, #a47753 0%, #684532 100%); color: #fff; font-size: 0.875rem;">
+                <span>Read Featured Article</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 3 & 4: CATEGORIES & LATEST ARTICLES
+         ====================================================================== -->
+    <section class="section section-cream" style="padding-top: 5rem; padding-bottom: 5.5rem;">
+      <div class="container">
+        
+        <!-- Category Filter Tabs -->
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem;">
+          <div>
+            <span class="section-eyebrow" style="color: var(--color-bronze);">Explore By Category</span>
+            <h2 class="journal-section-heading" style="font-family: var(--font-heading); font-size: clamp(1.75rem, 3vw, 2.25rem); margin-top: 0.25rem;">Latest Security Articles</h2>
+          </div>
+          <div style="font-size: 0.875rem; color: var(--text-secondary);" id="articlesCountDisplay">
+            Showing all 6 articles
+          </div>
+        </div>
+
+        <nav class="category-filter-bar" aria-label="Article Categories">
+          <button type="button" class="category-tab-btn active" data-category="all">All Articles</button>
+          <button type="button" class="category-tab-btn" data-category="home-security">Home Security</button>
+          <button type="button" class="category-tab-btn" data-category="lock-key-tips">Lock &amp; Key Tips</button>
+          <button type="button" class="category-tab-btn" data-category="key-duplication">Key Duplication</button>
+          <button type="button" class="category-tab-btn" data-category="business-security">Business Security</button>
+          <button type="button" class="category-tab-btn" data-category="emergency-guides">Emergency Guides</button>
+          <button type="button" class="category-tab-btn" data-category="lock-maintenance">Lock Maintenance</button>
+        </nav>
+
+        <!-- Articles Grid -->
+        <div class="journal-articles-grid" id="journalArticlesGrid" style="margin-top: 2rem;">
+
+          <!-- Article 1: Signs Your Door Lock Needs Replacement -->
+          <article class="journal-article-card" data-categories="lock-maintenance home-security">
+            <a href="blog/door-lock-replacement-signs.html" class="journal-card-media">
+              <img src="assets/images/blog-door-lock-signs.jpg" alt="Signs Your Door Lock Needs Replacement">
+              <span class="journal-card-badge">Lock Maintenance</span>
+            </a>
+            <div class="journal-card-body">
+              <div class="journal-card-meta">
+                <span>Oct 10, 2026</span>
+                <span>•</span>
+                <span>5 Min Read</span>
+              </div>
+              <h3 class="journal-card-title">
+                <a href="blog/door-lock-replacement-signs.html">Signs Your Door Lock Needs Replacement</a>
+              </h3>
+              <p class="journal-card-desc">
+                Loose cylinders, sticking keys, and latch bolt misalignment are warning signs of mechanical fatigue. Here is how to diagnose lock wear before failure occurs.
+              </p>
+              <div class="journal-card-footer">
+                <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted);">Inspection Guide</span>
+                <a href="blog/door-lock-replacement-signs.html" class="journal-read-link">
+                  Read Article &rarr;
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 2: Why Every Home Should Have a Spare Key -->
+          <article class="journal-article-card" data-categories="key-duplication home-security">
+            <a href="blog/importance-of-spare-keys.html" class="journal-card-media">
+              <img src="assets/images/blog-spare-keys.jpg" alt="Why Every Home Should Have a Spare Key">
+              <span class="journal-card-badge">Key Duplication</span>
+            </a>
+            <div class="journal-card-body">
+              <div class="journal-card-meta">
+                <span>Oct 4, 2026</span>
+                <span>•</span>
+                <span>4 Min Read</span>
+              </div>
+              <h3 class="journal-card-title">
+                <a href="blog/importance-of-spare-keys.html">Why Every Home Should Have a Spare Key</a>
+              </h3>
+              <p class="journal-card-desc">
+                Relying on a single key invites costly emergency lockouts and rushed locksmith calls. Learn how laser-cut duplicate keys safeguard your daily routine.
+              </p>
+              <div class="journal-card-footer">
+                <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted);">Preparedness</span>
+                <a href="blog/importance-of-spare-keys.html" class="journal-read-link">
+                  Read Article &rarr;
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 3: How to Maintain Your Door Locks -->
+          <article class="journal-article-card" data-categories="lock-maintenance lock-key-tips">
+            <a href="blog/lock-maintenance-guide.html" class="journal-card-media">
+              <img src="assets/images/blog-lock-maintenance.jpg" alt="How to Maintain Your Door Locks">
+              <span class="journal-card-badge">Lock Maintenance</span>
+            </a>
+            <div class="journal-card-body">
+              <div class="journal-card-meta">
+                <span>Sep 28, 2026</span>
+                <span>•</span>
+                <span>6 Min Read</span>
+              </div>
+              <h3 class="journal-card-title">
+                <a href="blog/lock-maintenance-guide.html">How to Maintain Your Door Locks</a>
+              </h3>
+              <p class="journal-card-desc">
+                WD-40 can actually ruin your pin tumbler cylinder. Discover the correct dry graphite and PTFE lubricants to keep deadbolts smooth in all seasons.
+              </p>
+              <div class="journal-card-footer">
+                <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted);">Preventative Care</span>
+                <a href="blog/lock-maintenance-guide.html" class="journal-read-link">
+                  Read Article &rarr;
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 4: Essential Security Tips for Small Businesses -->
+          <article class="journal-article-card" data-categories="business-security">
+            <a href="blog/business-security-tips.html" class="journal-card-media">
+              <img src="assets/images/blog-business-security.jpg" alt="Essential Security Tips for Small Businesses">
+              <span class="journal-card-badge">Business Security</span>
+            </a>
+            <div class="journal-card-body">
+              <div class="journal-card-meta">
+                <span>Sep 21, 2026</span>
+                <span>•</span>
+                <span>7 Min Read</span>
+              </div>
+              <h3 class="journal-card-title">
+                <a href="blog/business-security-tips.html">Essential Security Tips for Small Businesses</a>
+              </h3>
+              <p class="journal-card-desc">
+                Protecting commercial premises requires tiered physical defense: restricted keyways, hierarchical master key trees, and panic exit hardware.
+              </p>
+              <div class="journal-card-footer">
+                <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted);">Commercial Defense</span>
+                <a href="blog/business-security-tips.html" class="journal-read-link">
+                  Read Article &rarr;
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 5: What to Do When You Are Locked Out -->
+          <article class="journal-article-card" data-categories="emergency-guides">
+            <a href="blog/what-to-do-when-locked-out.html" class="journal-card-media">
+              <img src="assets/images/blog-locked-out.jpg" alt="What to Do When You Are Locked Out">
+              <span class="journal-card-badge">Emergency Guides</span>
+            </a>
+            <div class="journal-card-body">
+              <div class="journal-card-meta">
+                <span>Sep 15, 2026</span>
+                <span>•</span>
+                <span>5 Min Read</span>
+              </div>
+              <h3 class="journal-card-title">
+                <a href="blog/what-to-do-when-locked-out.html">What to Do When You Are Locked Out</a>
+              </h3>
+              <p class="journal-card-desc">
+                Stay calm, verify secondary entries, avoid damaging door jambs with makeshift tools, and call a certified non-destructive emergency technician.
+              </p>
+              <div class="journal-card-footer">
+                <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted);">Crisis Guide</span>
+                <a href="blog/what-to-do-when-locked-out.html" class="journal-read-link">
+                  Read Article &rarr;
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 6: Traditional Locks vs Smart Locks -->
+          <article class="journal-article-card" data-categories="lock-key-tips home-security">
+            <a href="blog/traditional-vs-smart-locks.html" class="journal-card-media">
+              <img src="assets/images/blog-smart-vs-traditional.jpg" alt="Traditional Locks vs Smart Locks">
+              <span class="journal-card-badge">Lock &amp; Key Tips</span>
+            </a>
+            <div class="journal-card-body">
+              <div class="journal-card-meta">
+                <span>Sep 8, 2026</span>
+                <span>•</span>
+                <span>8 Min Read</span>
+              </div>
+              <h3 class="journal-card-title">
+                <a href="blog/traditional-vs-smart-locks.html">Traditional Locks vs Smart Locks</a>
+              </h3>
+              <p class="journal-card-desc">
+                Can wireless touchscreens match the drill and pick resistance of high-security mechanical deadbolts? A master locksmith breaks down the reality.
+              </p>
+              <div class="journal-card-footer">
+                <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted);">Hardware Comparison</span>
+                <a href="blog/traditional-vs-smart-locks.html" class="journal-read-link">
+                  Read Article &rarr;
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Empty State (Hidden by default) -->
+          <div class="journal-empty-state" id="journalEmptyState">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="color: var(--color-bronze); margin-bottom: 1rem;"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+            <h3>No matching articles found</h3>
+            <p>Try searching for different keywords like "deadbolt", "spare", "maintenance", or reset the category filter.</p>
+            <button type="button" class="btn btn-hero-secondary" id="resetFiltersBtn" style="margin-top: 1rem; color: var(--color-walnut); border-color: var(--color-bronze); cursor: pointer;">Reset Search &amp; Filters</button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 5: QUICK SECURITY TIPS (EDITORIAL TYPOGRAPHIC)
+         ====================================================================== -->
+    <section class="section" style="padding-top: 4.5rem; padding-bottom: 5rem; border-top: 1px solid rgba(164, 119, 83, 0.2); border-bottom: 1px solid rgba(164, 119, 83, 0.2);">
+      <div class="container">
+        
+        <div class="quick-tips-container">
+          
+          <!-- Left Introduction -->
+          <div class="quick-tips-left">
+            <span class="section-eyebrow" style="color: var(--color-bronze);">Field Wisdom</span>
+            <h2 class="quick-tips-heading" style="font-family: var(--font-heading); font-size: clamp(2rem, 3.5vw, 2.75rem); margin-top: 0.5rem; margin-bottom: 1.25rem;">Small Habits.<br>Stronger Security.</h2>
+            <p style="font-size: 1.0625rem; line-height: 1.7; color: var(--text-secondary); margin-bottom: 2rem;">
+              Four straightforward, master-locksmith-approved habits you can implement this weekend without buying expensive hardware or undertaking major remodeling.
+            </p>
+            <div class="quick-tips-badge" style="display: inline-flex; align-items: center; gap: 0.75rem; padding: 0.75rem 1.25rem; background: rgba(164, 119, 83, 0.1); border-radius: 4px; border-left: 3px solid var(--color-bronze);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--color-bronze);"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><circle cx="12" cy="10" r="2"/></svg>
+              <span style="font-size: 0.8125rem; font-weight: 600;">Keyora Guild Standard Practice</span>
+            </div>
+          </div>
+
+          <!-- Right Grid of 4 Numbered Tips -->
+          <div class="quick-tips-grid">
+            
+            <div class="quick-tip-item">
+              <div class="quick-tip-num">01</div>
+              <h3 class="quick-tip-title">Never Hide Keys in Predictable Spots</h3>
+              <p class="quick-tip-text">
+                Fake plastic rocks, doormats, and door frame ledges are the exact first places intruders search. Entrust a spare to a trusted neighbor or install an outdoor mechanical code vault.
+              </p>
+            </div>
+
+            <div class="quick-tip-item">
+              <div class="quick-tip-num">02</div>
+              <h3 class="quick-tip-title">Upgrade to 3-Inch Strike Plate Screws</h3>
+              <p class="quick-tip-text">
+                Standard builder-grade screws are only 3/4 inch and catch weak trim casing. 3-inch hardened steel screws anchor directly into structural 2x4 wall studs, increasing kick-in resistance by 400%.
+              </p>
+            </div>
+
+            <div class="quick-tip-item">
+              <div class="quick-tip-num">03</div>
+              <h3 class="quick-tip-title">Use Dry Graphite, Never Petroleum Oil</h3>
+              <p class="quick-tip-text">
+                Household spray lubricants attract airborne dust and road grime that turns into thick gunk inside the pin tumblers. Always use micro-fine dry graphite or dedicated PTFE lock fluid.
+              </p>
+            </div>
+
+            <div class="quick-tip-item">
+              <div class="quick-tip-num">04</div>
+              <h3 class="quick-tip-title">Rekey Cylinders When Moving In</h3>
+              <p class="quick-tip-text">
+                Previous homeowners, property managers, cleaners, and contractors frequently retain unauthorized copies. Rekeying swaps the internal pins while preserving your existing decorative hardware.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 6: NEWSLETTER SUBSCRIPTION
+         ====================================================================== -->
+    <section class="section section-cream" style="padding-top: 5rem; padding-bottom: 5rem;">
+      <div class="container">
+        
+        <div class="journal-newsletter-box">
+          <span style="font-size: 0.8125rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.16em; color: var(--color-beige);">Security Briefings</span>
+          <h2 style="font-family: var(--font-heading); font-size: clamp(2rem, 3.5vw, 2.75rem); color: #FFFFFF; margin-top: 0.65rem; margin-bottom: 1rem;">
+            Stay Informed. Stay Secure.
+          </h2>
+          <p style="max-width: 620px; margin: 0 auto; color: #dfcfbf; font-size: 1.0625rem; line-height: 1.7;">
+            Receive our bi-weekly physical security dispatches, seasonal lock maintenance checklists, and burglary prevention analyses straight to your inbox.
+          </p>
+
+          <form class="journal-newsletter-form" id="journalNewsletterForm" onsubmit="return handleNewsletterSubmit(event);">
+            <input type="email" id="newsletterEmail" class="journal-newsletter-input" placeholder="Enter your business or personal email..." required aria-label="Email address for security briefings">
+            <button type="submit" class="journal-newsletter-btn">Subscribe Free</button>
+          </form>
+
+          <div id="newsletterSuccessMsg" style="display: none; color: #a4d29f; font-size: 0.9375rem; font-weight: 600; margin-top: 1rem;">
+            ✓ Thank you for subscribing. You will receive Keyora's latest security dispatch shortly.
+          </div>
+
+          <div style="font-size: 0.75rem; color: #a89484; margin-top: 1.25rem;">
+            Strictly zero spam. Unsubscribe with one click anytime. Your data is never shared.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 7: FINAL CTA
+         ====================================================================== -->
+    <section class="section section-dark section-walnut" style="text-align: center; background: radial-gradient(circle at 20% 50%, rgba(164, 119, 83, 0.22) 0%, transparent 60%), linear-gradient(135deg, #2b1b15 0%, #1e130e 100%) !important; color: #FFFFFF !important;">
+      <div class="container" style="max-width: 780px;">
+        <span class="section-eyebrow" style="color: var(--color-beige); text-transform: uppercase; letter-spacing: 0.15em; font-weight: 700; font-size: 0.8125rem;">— Master Security Solutions —</span>
+        <h2 class="section-title" style="margin-top: 0.75rem; margin-bottom: 1.25rem; color: #FFFFFF !important; font-size: clamp(2rem, 3.5vw, 2.75rem);">Good Security Starts with the Right Knowledge.</h2>
+        <p style="color: #dfcfbf; font-size: 1.0625rem; line-height: 1.7; margin-bottom: 2rem;">
+          Whether you need a master security assessment, high-security lock installation, or 24/7 rapid emergency dispatch, our certified guild is ready to assist.
+        </p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="services.html" class="btn-hero-primary" style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; padding: 0.875rem 1.75rem; border-radius: 4px; font-weight: 600; background: linear-gradient(135deg, #a47753 0%, #684532 100%); color: #fff;">
+            Explore Our Services &rarr;
+          </a>
+          <a href="contact.html" class="btn-hero-secondary" style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; padding: 0.875rem 1.75rem; border-radius: 4px; font-weight: 600; background: rgba(255, 255, 255, 0.08); border: 1.5px solid rgba(216, 195, 165, 0.35); color: #fff;">
+            Contact Our Experts
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       FOOTER (Keyora Master 4-Column Layout)
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-columns-grid">
+        
+        <!-- Column 1 – Brand Information -->
+        <div>
+          <div class="footer-brand-wrap">
+            <div class="brand-icon-wrapper" style="width: 44px; height: 44px; min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 22px; height: 22px; max-width: 22px; max-height: 22px; display: block;">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <circle cx="12" cy="10" r="2" fill="currentColor"/>
+                <path d="M12 12v3"/>
+              </svg>
+            </div>
+            <div>
+              <span class="footer-brand-title">Keyora</span>
+              <div style="font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--color-bronze);">Locksmith &amp; Security</div>
+            </div>
+          </div>
+          <p class="footer-desc-text">
+            Keyora is an established provider of premium master locksmithing, laser key duplication, and commercial access security. Dedicated to non-destructive entry, upfront fixed pricing, and 24/7 reliability.
+          </p>
+          <div class="footer-social-row">
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Twitter / X">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="footer-social-btn" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2 – Navigation Links -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html" class="footer-nav-link">Home</a></li>
+            <li><a href="home-2.html" class="footer-nav-link">Home 2 (Security Landing)</a></li>
+            <li><a href="about.html" class="footer-nav-link">About Us</a></li>
+            <li><a href="services.html" class="footer-nav-link">Our Services</a></li>
+            <li><a href="blog.html" class="footer-nav-link">Security Journal</a></li>
+            <li><a href="pricing.html" class="footer-nav-link">Transparent Pricing</a></li>
+            <li><a href="contact.html" class="footer-nav-link">Contact &amp; Booking</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 – Services Direct -->
+        <div>
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-nav-list">
+            <li><a href="services/residential-locksmith.html" class="footer-nav-link">Residential Locksmith</a></li>
+            <li><a href="services/commercial-locksmith.html" class="footer-nav-link">Commercial Locksmith</a></li>
+            <li><a href="services/automotive-locksmith.html" class="footer-nav-link">Automotive Locksmith</a></li>
+            <li><a href="services/key-duplication.html" class="footer-nav-link">Key Duplication</a></li>
+            <li><a href="services/lock-installation.html" class="footer-nav-link">Lock Installation</a></li>
+            <li><a href="services/emergency-locksmith.html" class="footer-nav-link">Emergency 24/7</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4 – Direct Contact -->
+        <div>
+          <h4 class="footer-col-title">Direct Contact</h4>
+          <div class="footer-contact-items">
+            <div class="footer-contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <div>
+                <strong>+1 (555) 123-4567</strong>
+                <div style="font-size: 0.8125rem; color: #a47753;">24/7 Priority Emergency Hotline</div>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <div>
+                <strong>journal@keyora.com</strong>
+                <div style="font-size: 0.8125rem; color: #dfcfbf;">Editorial &amp; Press Inquiries</div>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <strong>Keyora Security HQ</strong>
+                <div style="font-size: 0.8125rem; color: #dfcfbf;">742 Heritage Way, Metro District</div>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <div>
+                <strong>Hours of Operation</strong>
+                <div style="font-size: 0.8125rem; color: #dfcfbf;">Workshop: 8am – 7pm &bull; Mobile: 24/7/365</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Copyright Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 Keyora Master Locksmith &amp; Security Solutions. All rights reserved.
+        </div>
+        <div class="footer-legal-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <span>&bull;</span>
+          <a href="terms-of-service.html">Terms of Service</a>
+          <span>&bull;</span>
+          <a href="contact.html#licenses">License #LK-89412</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Journal Filter and Search Logic
+    document.addEventListener('DOMContentLoaded', () => {
+      const searchInput = document.getElementById('journalSearchInput');
+      const searchClear = document.getElementById('journalSearchClear');
+      const categoryTabs = document.querySelectorAll('.category-tab-btn');
+      const cards = document.querySelectorAll('.journal-article-card');
+      const countDisplay = document.getElementById('articlesCountDisplay');
+      const emptyState = document.getElementById('journalEmptyState');
+      const resetBtn = document.getElementById('resetFiltersBtn');
+
+      let currentCategory = 'all';
+      let currentQuery = '';
+
+      function filterArticles() {
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+          const cardCats = (card.getAttribute('data-categories') || '').toLowerCase();
+          const cardTitle = (card.querySelector('.journal-card-title')?.innerText || '').toLowerCase();
+          const cardDesc = (card.querySelector('.journal-card-desc')?.innerText || '').toLowerCase();
+          const cardBadge = (card.querySelector('.journal-card-badge')?.innerText || '').toLowerCase();
+
+          const matchesCategory = currentCategory === 'all' || cardCats.includes(currentCategory);
+          const matchesQuery = !currentQuery || 
+                               cardTitle.includes(currentQuery) || 
+                               cardDesc.includes(currentQuery) || 
+                               cardBadge.includes(currentQuery);
+
+          if (matchesCategory && matchesQuery) {
+            card.style.display = 'flex';
+            visibleCount++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        // Update count display
+        if (currentCategory === 'all' && !currentQuery) {
+          countDisplay.textContent = `Showing all ${visibleCount} articles`;
+        } else {
+          countDisplay.textContent = `Showing ${visibleCount} article${visibleCount === 1 ? '' : 's'}`;
+        }
+
+        // Empty state visibility
+        if (visibleCount === 0) {
+          emptyState.style.display = 'block';
+        } else {
+          emptyState.style.display = 'none';
+        }
+
+        // Clear button in search
+        if (searchInput.value.trim().length > 0) {
+          searchClear.style.display = 'block';
+        } else {
+          searchClear.style.display = 'none';
+        }
+      }
+
+      // Category tab click
+      categoryTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          categoryTabs.forEach(t => t.classList.remove('active'));
+          tab.classList.add('active');
+          currentCategory = tab.getAttribute('data-category');
+          filterArticles();
+        });
+      });
+
+      // Live search input
+      searchInput.addEventListener('input', (e) => {
+        currentQuery = e.target.value.trim().toLowerCase();
+        filterArticles();
+      });
+
+      // Search clear
+      searchClear.addEventListener('click', () => {
+        searchInput.value = '';
+        currentQuery = '';
+        filterArticles();
+        searchInput.focus();
+      });
+
+      // Reset filters button
+      resetBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        currentQuery = '';
+        categoryTabs.forEach(t => t.classList.remove('active'));
+        categoryTabs[0].classList.add('active');
+        currentCategory = 'all';
+        filterArticles();
+      });
+    });
+
+    // Newsletter submit demo
+    function handleNewsletterSubmit(e) {
+      e.preventDefault();
+      const email = document.getElementById('newsletterEmail').value;
+      const successMsg = document.getElementById('newsletterSuccessMsg');
+      if (email) {
+        document.getElementById('journalNewsletterForm').style.display = 'none';
+        successMsg.style.display = 'block';
+      }
+      return false;
+    }
+  </script>
+</body>
+</html>
