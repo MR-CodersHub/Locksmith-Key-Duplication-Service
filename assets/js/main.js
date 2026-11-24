@@ -104,34 +104,59 @@ function initStickyHeader() {
    4. MOBILE NAVIGATION DRAWER
    ========================================================================== */
 function initMobileNavigation() {
-  const hamburgerBtn = document.querySelector('.hamburger-btn');
+  const hamburgerBtns = document.querySelectorAll('.hamburger-btn');
   const drawer = document.querySelector('.mobile-drawer');
   const overlay = document.querySelector('.mobile-drawer-overlay');
   const closeBtn = document.querySelector('.mobile-close-btn');
   const navLinks = document.querySelectorAll('.mobile-nav-link');
   const subTriggers = document.querySelectorAll('.mobile-submenu-trigger');
 
-  if (!hamburgerBtn || !drawer || !overlay) return;
+  if (!hamburgerBtns.length || !drawer || !overlay) return;
 
   const openDrawer = () => {
     drawer.classList.add('active');
     overlay.classList.add('active');
+    document.body.classList.add('drawer-open');
     document.body.style.overflow = 'hidden';
   };
 
   const closeDrawer = () => {
     drawer.classList.remove('active');
     overlay.classList.remove('active');
+    document.body.classList.remove('drawer-open');
     document.body.style.overflow = '';
   };
 
-  hamburgerBtn.addEventListener('click', openDrawer);
-  if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+  hamburgerBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      openDrawer();
+    });
+  });
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      closeDrawer();
+    });
+  }
+
   overlay.addEventListener('click', closeDrawer);
+
+  drawer.addEventListener('click', (e) => {
+    // Prevent backdrop close when clicking inside drawer content
+    e.stopPropagation();
+  });
 
   navLinks.forEach(link => {
     if (!link.classList.contains('mobile-submenu-trigger')) {
       link.addEventListener('click', closeDrawer);
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && drawer.classList.contains('active')) {
+      closeDrawer();
     }
   });
 
